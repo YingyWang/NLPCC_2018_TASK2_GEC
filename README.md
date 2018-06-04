@@ -6,6 +6,7 @@ This is the code of our team (Zlbnlp) for the NLPCC 2018 Shared Task 2 Grammatic
 * python3.6
 * pytorch0.2.0
 * m2score scripts
+* libgrass-ui toolkit
 * Go to CS2S+BPE+Emb/software/fairseq-py directory and run  
 
 ```
