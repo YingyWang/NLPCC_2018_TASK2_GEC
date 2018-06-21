@@ -1,4 +1,4 @@
-
+#! /usr/bin/env bash
 ## This script is to run the complete GEC system on any given test set
 
 set -e
@@ -24,8 +24,8 @@ if [ -d $model_path ]; then
     models=`ls $model_path/*pt | tr '\n' ' ' | sed "s| \([^$]\)| --path \1|g"`
     echo $models
 elif [ -f $model_path ]; then
-    model=$model_path
-elif [ ! -e $model_path]; then
+    models=$model_path
+elif [ ! -e $model_path ]; then
     echo "Model path not found: $model_path"
 fi
 
