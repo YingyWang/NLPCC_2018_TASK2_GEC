@@ -5,7 +5,8 @@ This is the code of our team (Zlbnlp) for the NLPCC 2018 Shared Task 2 Grammatic
 ### Prerequisites
 * python3.6
 * pytorch0.2.0 (use following commands to install from source)
-```
+
+```bash
 export CMAKE_PREFIX_PATH="$(dirname $(which conda))/../" # [anaconda root directory]
 conda install numpy pyyaml mkl mkl-include setuptools cmake cffi typing
 conda install -c mingfeima mkldnn
@@ -18,10 +19,12 @@ git submodule update --init
 pip install -r requirements.txt
 python setup.py install
 ```
+
 * [m2score scripts](http://www.comp.nus.edu.sg/~nlp/sw/m2scorer.tar.gz)(to compute the metrics)
 * [libgrass-ui toolkit](http://www.icst.pku.edu.cn/lcwm/pkunlp/downloads/libgrass-ui.tar.gz)(word segmentation toolkit)
 * fairseq-py (dependent on torch, use following commands to install) 
-```
+
+```bash
 cd CS2S+BPE+Emb/software/fairseq-py
 pip install -r requirements.txt
 python setup.py build 
@@ -37,14 +40,15 @@ You need manually split the whole dataset into two parts.
 * test data is source.txt.jieba.seg,using jieba toolkit.
 
 ### Data processing
-1.Go to CS2S+BPE+Emb/training/ directory
-2.Run ./preprocess.sh script
+
+1. Go to CS2S+BPE+Emb/training/ directory
+2. Run ./preprocess.sh script
 
 ### Training
 
 * Training command
 
-    The command below is what we used to train an model on the NLPCC-2018 Task 2 dataset.
+The command below is what we used to train an model on the NLPCC-2018 Task 2 dataset.
 ```
 ./train_embed.sh
 ```
