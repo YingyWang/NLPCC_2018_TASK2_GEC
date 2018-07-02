@@ -41,8 +41,11 @@ You need manually split the whole dataset into two parts.
 
 ### Data processing
 
-- Go to CS2S+BPE+Emb/training/ directory
-- Run ./preprocess.sh script
+```bash
+cd CS2S+BPE+Emb/training/
+chmod +x preprocess.sh
+./preprocess.sh
+```
 
 ### Training
 
